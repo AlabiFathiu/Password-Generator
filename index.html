@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8dd41fcb54.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <!-- Alert -->
+            <div class="alert" id="alert"></div>
+            <!-- Password Generator -->
+            <h1>Password Generator</h1>
+            <!-- Result -->
+            <div class="password-container">
+                <div class="result">
+                    <span id="result"></span>
+                    <button class="clipboard" id="clipboard">
+                        <i class="fa-solid fa-clipboard"></i>
+                    </button>
+                </div>
+                <!-- Password Length -->
+                <div class="length">
+                    <h3>Password Length</h3>
+                    <input type="number" id="length" value="20">
+                </div>
+                <!-- settings -->
+                <div class="settings">
+                    <!-- uppercase -->
+                    <div class="uppercase">
+                        <h3>Uppercase</h3>
+                        <input type="checkbox" id="uppercase">
+                    </div>
+                    <!-- lowercase -->
+                    <div class="lowercase">
+                        <h3>Lowercase</h3>
+                        <input type="checkbox" id="lowercase">
+                    </div>
+                    <!-- symbols -->
+                    <div class="symbols">
+                        <h3>Symbols</h3>
+                        <input type="checkbox" id="symbols">
+                    </div>
+                    <!-- Number -->
+                    <div class="number">
+                        <h3>Number</h3>
+                        <input type="checkbox" id="number">
+                    </div>
+                </div>
+                <!-- generate Password -->
+                <button id="generate" class="generate">
+                    Generate Password
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
